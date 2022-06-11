@@ -1,0 +1,82 @@
+:root {
+    --text-main-color: #1B1D1F;
+    --text-logo-color: #010101;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-main-color);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* Hero */
+.hero-section {
+    width: 1360px;
+    height: 720px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: linear-gradient(270deg, #A5DEFF 0%, #FCFEFF 100%);
+}
+
+.logo {
+    width: 1170px;
+}
+
+.logo-icon {
+    display: inline-flex;
+    align-items: center;
+    width: 241px;
+    height: 32px;
+    margin-top: 32px;
+}
+
+.logo-text {
+    width: 125px;
+    margin-left: 16px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.25;
+
+    color: var(--text-logo-color);
+}
+
+.logo-icon::before {
+    background-image: url(../images/logo.svg);
+    content: "";
+    width: 100px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
