@@ -1,14 +1,20 @@
 :root {
+    --primary-white-color: #FFFFFF;
+    --accent-color: #FF6B0A;
+
     --text-main-color: #1B1D1F;
     --text-logo-color: #010101;
 }
 
+html,
+body {
+    height: 100%;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--text-main-color);
 }
-
 
 h1,
 h2,
@@ -30,27 +36,52 @@ p {
 
 .container {
     width: 1170px;
+    height: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .link {
     text-decoration: none;
 }
 
+.text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 2.08;
+    text-align: center;
+}
+
+.list {
+    list-style: none;
+}
+
 /* Hero */
 .hero-section {
-    width: 1360px;
-    height: 720px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
 
     background-image: linear-gradient(270deg, #A5DEFF 0%, #FCFEFF 100%);
 }
 
+/* Logo */
+
 .logo {
-    width: 1170px;
+    margin-bottom: 56px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 15px;
 }
 
 .logo-icon {
@@ -79,4 +110,133 @@ p {
     height: 32px;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+/* Banderogoose start window */
+
+.banderogoose-hero {
+    height: 100%;
+    position: relative;
+}
+
+.hero-container-raw {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.banderogoose-container {
+    align-self: center;
+    
+    padding: 60px 56px 60px 56px;
+
+    background-color: var(--primary-white-color);
+}
+
+.banderogoose-greeting {
+    margin-bottom: 16px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.banderogoose-start-text {
+    margin-bottom: 48px;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1;
+    color: var(--accent-color);
+}
+
+.banderogoose-title {
+    margin-bottom: 24px;
+
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.12;
+}
+
+.banderogoose-text {
+    margin-bottom: 48px;
+}
+
+.banderogoose-button {
+    padding: 12px 24px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: var(--accent-color);
+
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--primary-white-color);
+
+    cursor: pointer;
+}
+
+.banderogoose-image {
+    align-self: flex-end;
+}
+
+/* Interesting facts */
+
+.goose-facts {
+    padding-top: 52px;
+    padding-bottom: 72px;
+}
+
+.goose-facts > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ukr-logo,
+.goose-facts .title {
+    margin-bottom: 16px;
+}
+
+.goose-facts-text {
+    text-align: center;
+    width: 875px;
+    margin-bottom: 24px;
+}
+
+.goose-facts.list {
+    display: flex;
+}
+
+.goose-facts-image {
+    margin-bottom: 12px;
+}
+
+.goose-facts-item {
+    flex-basis: calc((100%-16px*2)/3);
+}
+
+.goose-facts-item:not(:last-child) {
+    margin-right: 16px;
+}
+
+.goose-facts-card {
+    padding-left: 47px;
+    padding-right: 47px;
+}
+
+.goose-facts-title {
+    display: inline-block;
+    margin-bottom: 32px;
+    width: 280px;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.goose-facts-item > .text {
+    display: inline-block;
+    width: 280px;
 }
