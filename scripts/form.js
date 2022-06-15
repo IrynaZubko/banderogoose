@@ -71,7 +71,7 @@ form.addEventListener('submit', e => {
             setTimeout(openSuccessModal, 700);
             setTimeout(closeSuccessModal, 4000);
             clearFormFields();
-        });
+        }, 4000);
       })
       .catch((error) => console.log('Sending form failed'));
 })
