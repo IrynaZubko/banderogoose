@@ -69,7 +69,7 @@ form.addEventListener('submit', e => {
         setTimeout(() => {
             closeFormModal();
             setTimeout(openSuccessModal, 700);
-            setTimeout(closeSuccessModal, 3000);
+            setTimeout(closeSuccessModal, 4000);
             clearFormFields();
         });
       })
